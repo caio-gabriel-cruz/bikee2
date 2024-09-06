@@ -54,6 +54,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnEntrar"
         android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -66,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <Button
-        android:id="@+id/txtButtonCadastrar"
+        android:id="@+id/txtBtnCadastrar"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +75,7 @@
         android:text="Cadastrar" />
 
     <Button
-        android:id="@+id/txtButtonRecuperar"
+        android:id="@+id/txtBtnRecuperar"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
