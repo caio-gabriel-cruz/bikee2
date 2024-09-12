@@ -1,5 +1,6 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -35,7 +36,14 @@ public class LoginActivity extends AppCompatActivity {
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CadastroActivity.class));
+            }
+        });
 
+        btnRecuperar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), RecuperarActivity.class));
             }
         });
 

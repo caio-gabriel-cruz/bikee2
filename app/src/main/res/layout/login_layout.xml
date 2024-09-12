@@ -67,15 +67,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnCadastrar"
-        style="@style/Widget.Material3.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Cadastrar" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCadastrar"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Cadastrar" />
 
-    <com.google.android.material.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRecuperar"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
