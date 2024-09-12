@@ -9,6 +9,19 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idRetornar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -18,11 +31,11 @@
         android:src="@drawable/fantasma" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtEmailCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
         android:hint="E-mail"
         app:startIconDrawable="@drawable/baseline_email">
 
@@ -35,7 +48,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtSenha"
+        android:id="@+id/txtSenhaCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -54,33 +67,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnEntrar"
+        android:id="@+id/BtnRecuperar"
         android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:hint="Entrar"
+        android:hint="Recuperar"
         android:textColorHint="#ffffff"
         app:cornerRadius="7dp" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnCadastrar"
-        style="@style/Widget.Material3.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Cadastrar" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnRecuperar"
-        style="@style/Widget.Material3.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:text="Esqueceu a Senha?" />
-    </RelativeLayout>
 </LinearLayout>
