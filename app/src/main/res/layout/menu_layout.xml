@@ -30,7 +30,12 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuBike"
+            android:clickable="true"
+            android:focusable="true"
+
+            >
 
 
             <LinearLayout
@@ -59,7 +64,11 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuAcessorios"
+            android:clickable="true"
+            android:focusable="true"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -69,7 +78,7 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/bike"
+                    android:src="@drawable/capa"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
@@ -95,7 +104,10 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuManutencao"
+            android:clickable="true"
+            android:focusable="true">
 
 
             <LinearLayout
@@ -106,7 +118,7 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/bike"
+                    android:src="@drawable/manutencao"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
@@ -124,7 +136,10 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuDicas"
+            android:clickable="true"
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,7 +149,7 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/bike"
+                    android:src="@drawable/dicas"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
@@ -160,7 +175,10 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuLocais"
+            android:clickable="true"
+            android:focusable="true">
 
 
             <LinearLayout
@@ -171,7 +189,7 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/bike"
+                    android:src="@drawable/locais"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
@@ -189,7 +207,10 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:layout_margin="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuEventos"
+            android:clickable="true"
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -199,7 +220,7 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/bike"
+                    android:src="@drawable/eventos"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
