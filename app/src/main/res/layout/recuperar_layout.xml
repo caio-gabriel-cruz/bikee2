@@ -28,7 +28,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/fantasma" />
+        android:src="@drawable/bikeicon2" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtEmailCadastrar"
