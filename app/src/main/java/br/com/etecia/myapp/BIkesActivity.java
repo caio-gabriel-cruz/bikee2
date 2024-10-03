@@ -36,7 +36,7 @@ public class BIkesActivity extends AppCompatActivity {
         idTabLayoutBikes.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-
+                idViewPagerBike.setCurrentItem(tab.getPosition());
             }
 
             @Override
@@ -50,6 +50,13 @@ public class BIkesActivity extends AppCompatActivity {
             }
         });
 
+        idViewPagerBike.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                idTabLayoutBikes.getTabAt(position);
+            }
+        });
 
     }
 }
