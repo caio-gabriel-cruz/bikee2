@@ -24,7 +24,7 @@ public class RecyclerAdapterBikeUsadas extends RecyclerView.Adapter<RecyclerAdap
     public int getItemCount() {
         return 0;
     }
-''
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public ViewHolder(@NonNull View itemView) {
