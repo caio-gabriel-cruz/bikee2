@@ -31,6 +31,7 @@ public class RecyclerAdapterBikeNova extends RecyclerView.Adapter<RecyclerAdapte
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            idModeloBikeNova = itemView.findViewById(R.id.idModeloBikeNova);
         }
     }
 
