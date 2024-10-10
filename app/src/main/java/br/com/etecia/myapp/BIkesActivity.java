@@ -1,6 +1,8 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +11,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.tabs.TabLayout;
 
 public class BIkesActivity extends AppCompatActivity {
     TabLayout idTabLayoutBikes;
     ViewPager2 idViewPagerBike;
     AdapterViewPagerBikes adapterViewPagerBikes;
+    MaterialToolbar idToolBarBike;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,7 @@ public class BIkesActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        idToolBarBike = findViewById(R.id.idToolBarBike);
         idTabLayoutBikes = findViewById(R.id.idTabLayoutBikes);
         idViewPagerBike = findViewById(R.id.idViewPagerBike);
 
@@ -57,6 +62,13 @@ public class BIkesActivity extends AppCompatActivity {
                 idTabLayoutBikes.getTabAt(position);
             }
         });
+
+        idToolBarBike.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+            }
+        });;
 
     }
 }
