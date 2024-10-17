@@ -19,7 +19,7 @@
             app:navigationIcon="@drawable/baseline_arrow_back"
             app:title="Bikes"
             app:titleCentered="true"
-            app:titleTextColor="#680D0D"/>
+            app:titleTextColor="#680D0D" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

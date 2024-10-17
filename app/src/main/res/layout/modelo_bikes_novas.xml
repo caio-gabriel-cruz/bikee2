@@ -11,18 +11,19 @@
         android:orientation="vertical">
 
         <ImageView
-            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="#2c2c2c" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/bike1" />
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5sp"
             android:text="Bike"
-            android:textColor="#ff5722"
+            android:textColor="#333333"
             android:textSize="25sp"
             android:textStyle="bold" />
 
