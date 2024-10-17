@@ -2,6 +2,8 @@ package br.com.etecia.myapp;
 
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -28,10 +30,14 @@ public class RecyclerAdapterBikeNova extends RecyclerView.Adapter<RecyclerAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         CardView idModeloBikeNova;
+        ImageView idModeloImagemBikeNova;
+        TextView idModeloTituloBikeNova;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             idModeloBikeNova = itemView.findViewById(R.id.idModeloBikeNova);
+            idModeloImagemBikeNova = itemView.findViewById(R.id.idModeloImagemBikeNova);
+            idModeloTituloBikeNova = itemView.findViewById(R.id.idModeloTituloBikeNova);
         }
     }
 
