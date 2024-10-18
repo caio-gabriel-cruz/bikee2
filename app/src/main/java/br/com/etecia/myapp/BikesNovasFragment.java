@@ -1,8 +1,8 @@
 package br.com.etecia.myapp;
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class BikesNovasFragment extends Fragment {
 
     private List<BikeNova> lstBikeNova;
@@ -20,9 +19,7 @@ public class BikesNovasFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_bikes_novas, container, false);
-
         idRecBikeNovas  = view.findViewById(R.id.idRecBikeNovas);
 
         // carregando os objetos na lista
@@ -38,8 +35,11 @@ public class BikesNovasFragment extends Fragment {
         lstBikeNova.add(new BikeNova("bike9",R.drawable.bike9));
         lstBikeNova.add(new BikeNova("bike10",R.drawable.bike10));
 
+        //carregando o adptador
+        RecyclerAdapterBikeNova adapterBikeNova = new RecyclerAdapterBikeNova(getContext(),lstBikeNova);
+        idRecBikeNovas.setLayoutManager(new GridLayoutManager(getContext(),2));
+        idRecBikeNovas.setAdapter(adapterBikeNova);
 
         return view;
-
     }
 }
